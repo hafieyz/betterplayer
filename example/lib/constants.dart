@@ -6,10 +6,10 @@ class Constants {
   static const String fileTestVideoUrl = "testvideo.mp4";
   static const String fileTestVideoEncryptUrl = "testvideo_encrypt.mp4";
   static const String networkTestVideoEncryptUrl =
-      "https://linearjitp-playback.astro.com.my/dash-wv/linear/2103/default_ott.mpd";
+      "https://linearjitp-playback.astro.com.my/dash-wv/linear/600/default_ott.mpd";
   static const String fileExampleSubtitlesUrl = "example_subtitles.srt";
   static const String hlsTestStreamUrl =
-      "https://mtoczko.github.io/hls-test-streams/test-group/playlist.m3u8";
+      "https://linearjitp-playback.astro.com.my/dash-wv/linear/600/default_ott.mpd";
   static const String hlsPlaylistUrl =
       "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8";
   static const Map<String, String> exampleResolutionsUrls = {
@@ -51,7 +51,8 @@ class Constants {
   static String catImageUrl =
       "https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/cat_relaxing_on_patio_other/1800x1200_cat_relaxing_on_patio_other.jpg";
   static String dashStreamUrl =
-      "https://bitmovin-a.akamaihd.net/content/sintel/sintel.mpd";
+      //"https://linearjitp-playback.astro.com.my/dash-wv/linear/600/default_ott.mpd";
+      "http://linearjitp-playback.astro.com.my/dash-wv/linear/2304/default_ott.mpd";
   static String segmentedSubtitlesHlsUrl =
       "https://eng-demo.cablecast.tv/segmented-captions/vod.m3u8";
 }
