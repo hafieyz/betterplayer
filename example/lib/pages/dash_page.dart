@@ -19,7 +19,14 @@ class _DashPageState extends State<DashPage> {
     );
     BetterPlayerDataSource dataSource = BetterPlayerDataSource(
         BetterPlayerDataSourceType.network, Constants.dashStreamUrl,
-        useAsmsSubtitles: true, useAsmsTracks: true);
+        drmConfiguration: BetterPlayerDrmConfiguration(
+            drmType: BetterPlayerDrmType.clearKey,
+            clearKey: BetterPlayerClearKeyUtils.generateKey({
+              "897aa91ee5958140b5ebd8076cced310":
+                  "453b01beb73c78bd6f8ad380f8a06a8e",
+            })),
+        useAsmsSubtitles: true,
+        useAsmsTracks: true);
     _betterPlayerController = BetterPlayerController(betterPlayerConfiguration);
     _betterPlayerController.setupDataSource(dataSource);
     super.initState();
@@ -44,7 +51,10 @@ class _DashPageState extends State<DashPage> {
           AspectRatio(
             aspectRatio: 16 / 9,
             child: BetterPlayer(controller: _betterPlayerController),
+            
           ),
+
+          
         ],
       ),
     );
